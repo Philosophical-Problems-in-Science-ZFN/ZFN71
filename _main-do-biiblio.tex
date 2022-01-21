@@ -116,13 +116,13 @@
 \usepackage{textgreek}
 
 \usepackage{geometry}
-\geometry{verbose,paperwidth=145mm,paperheight=205mm,landscape=false,
+\geometry{verbose,paperwidth=1450mm,paperheight=205mm,landscape=false,
 twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 
 %-----spady---------
 %\usepackage[cam,a4,center]{crop}
 %\usepackage[width=151mm,height=211mm,center,cam,noinfo]{crop} % konsultuj z dokumentacją
-\usepackage[width=151mm,height=211mm,center,noinfo]{crop} % bex lini citęcia, konsultuj z dokumentacją
+%\usepackage[width=151mm,height=211mm,center,noinfo]{crop} % bex lini cięcia, konsultuj z dokumentacją
 
 \input{hyphenation}
 
@@ -186,7 +186,7 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 %------------------------- MyriadPro ------------------------------------
 \usepackage{textcomp}
 %\usepackage{Myriad}
-\input{glyphtounicode.tex}
+%\input{glyphtounicode.tex}
 \pdfgentounicode=1
 \usepackage{inconsolata}
 
@@ -241,34 +241,34 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 %\usepackage{mathptmx}
 %\fontfamily{qtimes-LF}
 %\usepackage{tgtermes}
-\renewcommand{\rmdefault}{txr}
+%\renewcommand{\rmdefault}{txr}
 \renewcommand{\normalsize}{\fontsize{10.3}{15.2}\selectfont}
 \selectfont
 
-\makeatletter
-\renewcommand\small{%
-	\@setfontsize\small{9.3}{13}%
-	\abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
-	\abovedisplayshortskip \z@ \@plus3\p@
-	\belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
-	\def\@listi{\leftmargin\leftmargini
-		\topsep 6\p@ \@plus2\p@ \@minus2\p@
-		\parsep 3\p@ \@plus2\p@ \@minus\p@
-		\itemsep \parsep}%
-	\belowdisplayskip \abovedisplayskip
-}
-\renewcommand\footnotesize{%
-	\@setfontsize\footnotesize{8.3}{11}%
-	\abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
-	\abovedisplayshortskip \z@ \@plus\p@
-	\belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
-	\def\@listi{\leftmargin\leftmargini
-		\topsep 4\p@ \@plus2\p@ \@minus2\p@
-		\parsep 2\p@ \@plus\p@ \@minus\p@
-		\itemsep \parsep}%
-	\belowdisplayskip \abovedisplayskip
-}
-\makeatother
+%\makeatletter
+%\renewcommand\small{%
+%	\@setfontsize\small{9.3}{13}%
+%	\abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+%	\abovedisplayshortskip \z@ \@plus3\p@
+%	\belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+%	\def\@listi{\leftmargin\leftmargini
+%		\topsep 6\p@ \@plus2\p@ \@minus2\p@
+%		\parsep 3\p@ \@plus2\p@ \@minus\p@
+%		\itemsep \parsep}%
+%	\belowdisplayskip \abovedisplayskip
+%}
+%\renewcommand\footnotesize{%
+%	\@setfontsize\footnotesize{8.3}{11}%
+%	\abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+%	\abovedisplayshortskip \z@ \@plus\p@
+%	\belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+%	\def\@listi{\leftmargin\leftmargini
+%		\topsep 4\p@ \@plus2\p@ \@minus2\p@
+%		\parsep 2\p@ \@plus\p@ \@minus\p@
+%		\itemsep \parsep}%
+%	\belowdisplayskip \abovedisplayskip
+%}
+%\makeatother
 
 
 %----------inicjały-----------------------------------------
@@ -426,7 +426,7 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 	\addtocontents{toc}{\vskip.8\baselineskip}
 	\begin{refsection}%
 		\selectlanguage{english}%
-		\pasekeng%
+%		\pasekeng%
 		\begin{raggedleft}%
 			{\flushright\chaptitle\color{black!70}{#2\par}}%
 			\vspace{7mm}%
@@ -1194,24 +1194,24 @@ backend=biber]{biblatex}
 %\includepdf[pages=1]{images/CT4.pdf}
 
 
-\input{pierwsza.tex}
-\clearpage
-
-\input{czwarta_eng.tex}
-\clearpage
-
-%\input{toctest.tex}
-%
+%\input{pierwsza.tex}
 %\clearpage
-
-%Spis tresci -------------------------------------------------
-
-{\thispagestyle{plain} \tableofcontents \clearpage}
-%-------------------------------------------------------------
-\newpage
-\thispagestyle{plain}
-\cleardoublepage
-\thispagestyle{plain}
+%
+%\input{czwarta_eng.tex}
+%\clearpage
+%
+%%\input{toctest.tex}
+%%
+%%\clearpage
+%
+%%Spis tresci -------------------------------------------------
+%
+%{\thispagestyle{plain} \tableofcontents \clearpage}
+%%-------------------------------------------------------------
+%\newpage
+%\thispagestyle{plain}
+%\cleardoublepage
+%\thispagestyle{plain}
 
 %-------------------------------------------------------------
 
@@ -1232,7 +1232,7 @@ backend=biber]{biblatex}
 
 
 
-\sekcja{Artykuły}{Articles}
+%\sekcja{Artykuły}{Articles}
 
 %\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 %\input{ART_Majid/Majid.tex} 
@@ -1260,13 +1260,13 @@ backend=biber]{biblatex}
 %\addtocontents{toc}{\protect\pagebreak}
 
 
-\sekcja{Sprawozdania}{Reports}
+%\sekcja{Sprawozdania}{Reports}
 \input{REP_Gradzka/gradzka.tex}
 
 
 
 
-\sekcja{Artykuły recenzyjne}{Review articles}
+%\sekcja{Artykuły recenzyjne}{Review articles}
 
 
 %polskie
